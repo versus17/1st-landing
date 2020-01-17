@@ -1,38 +1,17 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  outline: none;
-}
-html { height: 101%; } /* always display scrollbars */
-body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-ol, ul { list-style: none; }
-
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-strong { font-weight: bold; } 
-
-input { outline: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-img { border: 0; max-width: 100%; }
-
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-
 body {
-	font-family: Nunito Sans, Arial, Yeseva One;
-	margin: 0;
+	margin: 0px;
+	font-family: Nunito Sans, Yeseva One;
+	}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
 }
 
-body * {
-	box-sizing: border-box;
-}
+/* Buttons */
 
 .button {
 	background: #E3B873;
@@ -50,9 +29,32 @@ body * {
 	color: #FFFFFF;
 }
 
+.button-special {
+	background: rgba(0, 0, 0, 0);
+	outline: 0;
+	border: 1px solid #FFFFFF;
+	border-radius: 2px;
+	font-family: Nunito Sans;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
 .header-button {
 	padding: 13px 33px;
 }
+
+.hero-button {
+	height: 51px;
+	width: 207px;
+	margin: 20px 20px 0px 0px;
+}
+
+/*---------*/
 
 .content {
 	max-width: 1440px;
@@ -81,6 +83,7 @@ body * {
 
 .header-navigation__item {
 	margin-right: 47px;
+
 }
 
 .header-navigation__link {
@@ -91,17 +94,18 @@ body * {
 	font-weight: normal;
 	font-size: 11px;
 	line-height: 15px;
+	transition: .2s;
 }
 
 .header-navigation__link:hover {
 	color: #E3B873;
 }
 
-.phone {
+.header-phone {
 	color: #E3B873;
 }
 
-.phone:hover {
+.header-phone:hover {
 	color: white;
 }
 
@@ -114,16 +118,14 @@ body * {
 	position: relative;
 }
 
-.title {
+.hero-title {
 	margin: 0;
-
 	font-family: Yeseva One;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 40px;
 	line-height: 53px;
 	text-transform: uppercase;
-
 	color: #FFFFFF;
 }
 
@@ -152,29 +154,111 @@ body * {
 	font-weight: normal;
 	font-size: 22px;
 	line-height: 36px;
-
 	color: #FFFFFF;
 	margin: 0;
-	width: 504px;
+	max-width: 504px;
 }
 
-.hero-button {
-	height: 51px;
-	width: 207px;
-	margin: 20px 20px 0px 0px;
+/* Projects */
+
+.projects {
+	background-color: black;
 }
 
-.button-special {
-	background: rgba(0, 0, 0, 0);
-	outline: 0;
-	border: 1px solid #FFFFFF;
-	border-radius: 2px;
-	font-family: Nunito Sans;
-	font-style: italic;
+.projects-content {
+	padding-top: 107px;
+}
+
+.projects-slider {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	max-width: 1170px;
+}
+
+.projects-slider__item {
+	margin-left: 60.5px;
+	margin-right: 60.5px;
+	padding-bottom: 50px;
+}
+
+.projects-slider__link {
+	text-decoration: none;
+	font-family: Yeseva One;
+	font-style: normal;
 	font-weight: normal;
-	font-size: 11px;
-	line-height: 15px;
-	text-align: center;
+	font-size: 14px;
+	line-height: 19px;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: rgba(255, 255, 255, 0.3);
+	transition: .2s;
+	padding-bottom: 9px;
 }
+
+.projects-slider__link:hover {
+	color: #E3B873;
+	text-decoration: none;
+	border-bottom: solid 1px #E3B873;
+}
+
+.projects-slider-text {
+	display: flex;
+	
+}
+
+.title {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	text-transform: uppercase;
+	color: #E3B873;
+}
+
+.projects-title {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #E3B873;
+}
+
+.projects-description {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	color: #FFFFFF;
+	/*display: block;*/
+}
+
+.projects-text {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: #FFFFFF;
+	/*display: inline;*/
+}
+
+.projects-parametres {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	}
+
+ .projects-parametres__item {
+	margin: 20px 20px 0px 0px;
+	
+ }
+
+ .projects-slider-content {
+ 	display: flex;
+ 	max-width: 1170px;
+ 	margin: auto;
+ }
