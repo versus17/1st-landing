@@ -106,10 +106,38 @@
 			</div>
 		</section>
 		<section class="control">
-			<h3 class="title">
+			<h3 class="title control-title">
 				online control
 			</h3>
-
+			<div class="control__camera">
+				<img src="images/camera.svg" alt="camera">	
+			</div>
+			<div class="control-video">
+				<img src="images/control-video.png" alt="control-video">
+				<div class="control-overlay"></div>
+				<img src="images/play.svg" alt="play" class="play">
+			</div>
+			<hr class="hr">
+			<p class="control-text">
+				At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
+			</p>
+			<form class="form" action="">
+				<div class="fieldset">
+					<div class="labelInput">
+						<label class="label" for="name">Name:</label>
+						<input class="input" type="text" id="name" required placeholder="What is your name:">
+					</div>
+					<div class="labelInput">
+						<label class="label" for="phone">Name:</label>
+						<input class="input" type="text" id="phone" required placeholder="Your phone number:">
+					</div>				
+					<button class="button control-button">Submit</button>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox_1">
+					<label class="checkbox-text" for="checkbox_1">I agree to the processing of personal data</label>
+				</div>
+			</form>
 		</section>
 	</main>
 </body>
