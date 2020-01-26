@@ -486,3 +486,113 @@ body {
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: rgb(59, 153, 252) auto 5px;
 }
+
+.repair {
+    margin-top: 75px;
+}
+
+.repair-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1236px;
+}
+
+.repair-title {
+    text-align: center;
+    color: black;
+}
+
+.repair-logo {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 30px;
+}
+
+.repair-logo::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    position: relative;
+    top: 15px;
+    right: 10px;
+    background: rgb(227, 184, 115);
+    border-radius: 30px;
+}
+
+.repair-logo::after {
+    content: "";
+    width: 30px;
+    height: 1px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    background: rgb(227, 184, 115);
+    border-radius: 30px;
+}
+
+.repair-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repair-content-item__img1 {
+    background-image: url(../images/redecorating.png);
+    min-width: 392px;
+    min-height: 421px;
+}
+
+.repair-content-item-descript {
+    background-color: white;
+    max-width: 330px;
+    padding-left: 32px;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    box-shadow: rgba(0, 0, 0, 0.03) 10px 10px 20px;
+    margin: -98px auto 0px;
+}
+
+.repair-descript-title {
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(54, 54, 54);
+}
+
+.repair-list {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: rgb(149, 149, 149);
+    padding-left: 15px;
+}
+
+.repair-button {
+    min-width: 228px;
+    min-height: 54px;
+    margin-top: -26px;
+    margin-left: 31px;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.repair-content-item__img2 {
+    background-image: url(../images/Overhaul.png);
+    min-width: 392px;
+    min-height: 421px;
+}
+
+.repair-content-item__img3 {
+    background-image: url(../images/Designer_Repair.png);
+    min-width: 392px;
+    min-height: 421px;
+}
