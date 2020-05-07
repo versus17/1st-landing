@@ -254,10 +254,11 @@ body {
 	max-width: 1170px;
  	margin: auto;
  	justify-content: space-between;
+ 	position: relative;
 }
 
 .projects-slider-text {
-	position: relative;
+	/*position: relative;*/
 	margin: auto;
 }
 
@@ -1495,6 +1496,6 @@ body {
 	}
 
 	.play {
-		
+
 	}
 }
