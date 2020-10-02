@@ -20,19 +20,19 @@
 							<a class="header-navigation__link" href="#">HOME</a>
 						</li>
 						<li class="header-navigation__item">
-							<a class="header-navigation__link" href="#">PROJECTS</a>
+							<a class="header-navigation__link" href="#projects">PROJECTS</a>
 						</li>
 						<li class="header-navigation__item">
-							<a class="header-navigation__link" href="#">MEASUREMENT</a>
+							<a class="header-navigation__link" href="#offer">MEASUREMENT</a>
 						</li>
 						<li class="header-navigation__item">
 							<a class="header-navigation__link" href="#">TEAM</a>
 						</li>
 						<li class="header-navigation__item">
-							<a class="header-navigation__link" href="#">REVIEWS</a>
+							<a class="header-navigation__link" href="#clients">REVIEWS</a>
 						</li>
 						<li class="header-navigation__item">
-							<a class="header-navigation__link" href="#">CONTACTS</a>
+							<a class="header-navigation__link" href="#contacts">CONTACTS</a>
 						</li>
 					</ul>
 				</nav>
@@ -52,18 +52,18 @@
 				</div>
 				<div class="hero-overlay"></div>
 			</section>
-			<section class="projects">
+			<section class="projects" id="projects">
 				<div class="content projects-content">
 					<ul class="projects-slider">
-						<li class="projects-slider__item"><a class="projects-slider__link" href="#">Rostov-on-Don, Admiral</a></li>
-						<li class="projects-slider__item"><a class="projects-slider__link" href="#">Sochi Thieves</a></li>
-						<li class="projects-slider__item"><a class="projects-slider__link" href="#">Rostov-on-Don Patriotic</a></li>
+						<li class="projects-slider__item"><a class="projects-slider__link projects-slider__select" value="0">Rostov-on-Don, Admiral</a></li>
+						<li class="projects-slider__item"><a class="projects-slider__link" value="1">Sochi Thieves</a></li>
+						<li class="projects-slider__item"><a class="projects-slider__link" value="2">Rostov-on-Don Patriotic</a></li>
 					</ul>
 					<div class="projects-slider-content">
 						<div class="projects-slider-text">
-							<div>
+							<div class="projects-slider-container">
 								<div>
-									<h2 class="title text-center">
+									<h2 class="title text-center projects-header">
 									Completed<br> projects
 									</h2>
 									<p class="projects-description text-center">
@@ -71,7 +71,7 @@
 									</p>
 								</div>
 								<div class="projects-image-mobile">
-									<img class="projects-image-mobile__item" src="images/project-image-1.png" alt="project-1">
+									<img class="projects-image-mobile__item" id="imgMob" src="images/project-image-1.png" alt="project-1">
 									<img src="images/arrow-left-mobile.svg" class="projects-image-mobile-left" alt="">
 									<img src="images/arrow-right-mobile.svg" class="projects-image-mobile-right" alt="">
 								</div>
@@ -81,15 +81,15 @@
 											<h3 class="projects-title">
 												City:
 											</h3>
-											<span class="projects-text">
-												Rostov-on-Don LCD admiral
+											<span class="projects-text" id="city">
+												Rostov-on-Don<br/> LCD admiral
 											</span>
 										</div>
 										<div class="projects-parametres__item">
 											<h3 class="projects-title">
 												Repair time:
 											</h3>
-											<span class="projects-text">
+											<span class="projects-text" id="time">
 												3.5 months
 											</span>
 										</div>							
@@ -99,7 +99,7 @@
 											<h3 class="projects-title">
 												apartment area:
 											</h3>
-											<span class="projects-text">
+											<span class="projects-text" id="area">
 												81 m2
 											</span>
 										</div>
@@ -114,11 +114,24 @@
 									</div>
 								</div>
 							</div>
-							<div class="arrows">
-								<img src="images/arrows.svg" alt="">
-							</div>
 						</div>
-						<img class="projects-image" src="images/project-image-1.png" alt="project-1">
+						<img class="projects-image" src="images/project-image-1.png" alt="project-1" id="img">
+						<div class="arrows">
+							<button class="projects-arrow projects-arrow__left"></button>
+							<div class="projects_radio">
+								<input id="radio-0" type="radio" name="radio" value="0" class="radio radio__checked" checked>
+								<label for="radio-0"></label>
+							</div>							 
+							<div class="projects_radio">
+								<input id="radio-1" type="radio" name="radio" value="1" class="radio">
+								<label for="radio-1"></label>
+							</div>							 
+							<div class="projects_radio">
+								<input id="radio-2" type="radio" name="radio" value="2" class="radio">
+								<label for="radio-2"></label>
+							</div>
+							<button class="projects-arrow projects-arrow__right"></button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -232,7 +245,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="offer">
+			<section class="offer" id="offer">
 				<div class="content offer-content">
 					<div class="features">
 						<div class="features_item">
@@ -317,7 +330,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="clients">
+			<section class="clients" id="clients">
 				<div class="content clients-content">
 					<h3 class="title clients-title">
 						our clients
@@ -418,7 +431,7 @@
 					</div>	
 				</div>
 			</section>
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<div class="contacts-container content">	
 					<form action="" class="conacts-form">
 						<div class="contacts-fieldset">
@@ -487,5 +500,6 @@
 				<button class="button header-button">Request a call</button>
 			</div>
 		</footer>
+		<script src="index.js"></script>
 	</body>
 </html>
