@@ -5,21 +5,21 @@ const entities = [
         city: 'Rostov-on-Don<br/> LCD admiral',
         time: '3.5 months',
         area: '81 m2',
-        img: '/images/project-image-1.png',
+        img: 'images/project-image-1.png',
         alt: 'project-1'
     },
     {
         city: 'Sochi<br/> Thieves',
         time: '4 months',
         area: '105 m2',
-        img: '/images/project-image-2.png',
+        img: 'images/project-image-2.png',
         alt: 'project-2'
     },
     {
         city: 'Rostov-on-Don<br/> Patriotic',
         time: '3 months',
         area: '93 m2',
-        img: '/images/project-image-3.png',
+        img: 'images/project-image-3.png',
         alt: 'project-3'
     }
 ];
