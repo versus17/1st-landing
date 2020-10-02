@@ -61,30 +61,25 @@ const addStyles = () => {
 
 listLinks.addEventListener('click', (event) => {
 	if (event.target.nodeName === 'A') {
-        console.log(currentIndex+'------');
         let value = event.target.attributes[1].value;
         removeStyles();
         currentIndex = value;
         addStyles();
         setEntity(currentIndex);
-        console.log('------'+currentIndex);
 	}
 });
 
 radios.addEventListener('click', (event) => {
     if (event.target.nodeName === 'INPUT') {
-        console.log(currentIndex+'------');
         let value = event.target.value;
         removeStyles();
         currentIndex = value;
         addStyles();
         setEntity(currentIndex);
-        console.log('------'+currentIndex);
     }
 });
 
 const prevFunc = () => {
-    console.log(currentIndex+'------');
     removeStyles(currentIndex);
     currentIndex -= 1;
     if (currentIndex < 0) {
@@ -92,11 +87,9 @@ const prevFunc = () => {
     }
     addStyles();
     setEntity(currentIndex);
-    console.log('------'+currentIndex);
 };
 
 const nextFunc = () => {
-    console.log(currentIndex+'------');
     removeStyles(currentIndex);
     currentIndex += 1;
     if (currentIndex > 2) {
@@ -104,7 +97,6 @@ const nextFunc = () => {
     }
     addStyles();
     setEntity(currentIndex);
-    console.log('------'+currentIndex);
 };
 
 prev.addEventListener('click', prevFunc);
