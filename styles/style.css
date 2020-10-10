@@ -303,12 +303,12 @@ body {
 }
 
 .projects-arrow__left{
-	background: url(/images/arrow-left.svg);
+	background: url(../images/arrow-left.svg);
 	margin-right: 21px;
 }
 
 .projects-arrow__right{
-	background: url(/images/arrow-right.svg);
+	background: url(../images/arrow-right.svg);
 	margin-left: 21px;
 }
 
@@ -335,11 +335,11 @@ body {
 	position: absolute;
 	left: 0;
 	bottom: 1px;
-	background: url(/images/radio-off.svg) 0 0 no-repeat;
+	background: url(../images/radio-off.svg) 0 0 no-repeat;
 }
 
 .radio__checked + label:before {
-	background: url(/images/radio-on.svg) 0 0 no-repeat;
+	background: url(../images/radio-on.svg) 0 0 no-repeat;
 }
 
 /* Checked
